@@ -8,3 +8,4 @@
 
 (package! uuidgen)
 (package! string-inflection)
+(package! darktooth-theme)
