@@ -5,12 +5,12 @@
 (setq initial-frame-alist '((top . 50) (left . 200) (width . 130) (height . 75)))
 
 ;; (setq doom-theme 'doom-spacegrey)
-(setq doom-theme 'darktooth)
+;; (setq doom-theme 'darktooth)
+(setq doom-theme 'doom-oceanic-next)
 
-(setq doom-font (font-spec :family "Input Mono" :weight 'light :size 13))
+(setq doom-font (font-spec :family "IBM Plex Mono" :weight 'light :size 13))
 
-(define-key evil-normal-state-map "\C-e" 'end-of-line)
-
+(define-key evil-normal-state-map "\C-e" 'doom/forward-to-last-non-comment-or-eol)
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key "\C-s" 'swiper)
 
@@ -30,7 +30,7 @@
 (setq org-capture-templates
       '(("r" "RPG ideas" entry (file+headline "../rpg/ideas.org" "Ideas")
          "* %?\n\nEntered %U\n")
-        ("t" "Todo" entry (file+headline "tasks.org" "Tasks")
+        ("t" "Todo" entry (file+headline "todo.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
         ("n" "Note" entry (file org-default-notes-file)
          "* %?\n\nEntered %U\n")))
@@ -39,6 +39,7 @@
 (setq deft-directory "~/Documents/Notes")
 (setq tramp-default-method "ssh")
 
-(setq-default js2-basic-offset 2)
-(setq-default js-indent-level 2)
+;; (setq-default js2-basic-offset 2)
+;; (setq-default js-indent-level 2)
 (setq-default css-indent-offset 2)
+(setq-default web-mode-markup-indent-offset 2)
