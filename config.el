@@ -8,10 +8,10 @@
 ;; (setq doom-theme 'darktooth)
 (setq doom-theme 'doom-oceanic-next)
 
-(setq doom-font (font-spec :family "IBM Plex Mono" :weight 'light :size 13))
+(setq doom-font (font-spec :family "IBM Plex Mono" :weight 'light :size 11))
 
 (define-key evil-normal-state-map "\C-e" 'doom/forward-to-last-non-comment-or-eol)
-(global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "C-@") 'er/expand-region)
 (global-set-key "\C-s" 'swiper)
 
 ;; default
