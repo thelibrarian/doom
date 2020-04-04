@@ -43,3 +43,14 @@
 ;; (setq-default js-indent-level 2)
 (setq-default css-indent-offset 2)
 (setq-default web-mode-markup-indent-offset 2)
+
+;; Auto-indent parens and braces
+(defun indent-between-pair (&rest _ignored)
+  (newline)
+  (indent-according-to-mode)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(sp-local-pair 'prog-mode "{" nil :post-handlers '((indent-between-pair "RET")))
+(sp-local-pair 'prog-mode "[" nil :post-handlers '((indent-between-pair "RET")))
+(sp-local-pair 'prog-mode "(" nil :post-handlers '((indent-between-pair "RET")))
