@@ -6,7 +6,8 @@
 
 ;; (setq doom-theme 'doom-spacegrey)
 ;; (setq doom-theme 'darktooth)
-(setq doom-theme 'doom-oceanic-next)
+;; (setq doom-theme 'doom-oceanic-next)
+(setq doom-theme 'doom-opera-light)
 
 (setq doom-font (font-spec :family "IBM Plex Mono" :weight 'light :size 11))
 
