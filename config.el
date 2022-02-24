@@ -56,4 +56,4 @@
 (sp-local-pair 'prog-mode "[" nil :post-handlers '((indent-between-pair "RET")))
 (sp-local-pair 'prog-mode "(" nil :post-handlers '((indent-between-pair "RET")))
 
-(add-hook! (org-mode) #'doom|disable-line-numbers)
+;; (add-hook! (org-mode) #'doom|disable-line-numbers)
