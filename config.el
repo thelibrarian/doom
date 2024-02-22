@@ -92,7 +92,8 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-(setq doom-font (font-spec :family "IBM Plex Mono" :weight 'light :size 11))
+;; (setq doom-font (font-spec :family "IBM Plex Mono" :weight 'light :size 11))
+(setq doom-font (font-spec :family "Berkeley Mono" :weight 'light :size 13))
 
 (define-key evil-normal-state-map "\C-e" 'doom/forward-to-last-non-comment-or-eol)
 (global-set-key (kbd "C-@") 'er/expand-region)
